@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin login</title>
+    <link rel="stylesheet" href="f3admlog.css">
+
+</head>
+
+<body>
+ 
+    <div id="bg"></div>
+
+    <form action="admin.php" method="post">
+        <div class="form-field">
+            <input type="text" placeholder="Admin" name="name" required />
+        </div>
+
+        <div class="form-field">
+            <input type="password" placeholder="password" name="password" required />
+        </div>
+
+        <div class="form-field">
+            <button class="btn" onclick="login()" type="submit">Log in</button>
+        </div>
+    </form>
+ 
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+
+
+</html>
